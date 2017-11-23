@@ -86,7 +86,7 @@ main_page_head = '''
                 left: 0;
                 height: 100vh;
                 z-index: 999;
-                background: #7386D5;
+                background: rgb(213, 182, 115);
                 color: #fff;
                 transition: all 0.3s;
             }
@@ -97,12 +97,12 @@ main_page_head = '''
 
             #sidebar .sidebar-header {
                 padding: 20px;
-                background: #6d7fcc;
+                background: #ccae6d;
             }
 
             #sidebar ul.components {
                 padding: 20px 0;
-                border-bottom: 1px solid #47748b;
+                border-bottom: 1px solid #8b6247;
             }
 
             #sidebar ul input{
@@ -129,7 +129,7 @@ main_page_head = '''
 
             #sidebar ul li.active > a, a[aria-expanded="true"] {
                 color: #fff;
-                background: #6d7fcc;
+                background: ##cc9b6d;
             }
 
 
@@ -153,7 +153,7 @@ main_page_head = '''
             ul ul a {
                 font-size: 0.9em !important;
                 padding-left: 30px !important;
-                background: #6d7fcc;
+                background: #ccab6d;
             }
 
             a.article, a.article:hover {
