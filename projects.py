@@ -27,7 +27,7 @@ won_lab = project_model.Project(
     description="Just making something very... Terrestrial :D",
     open_datetime="November 23rd 12017",
     genre="Website",
-    youtube_url="https://www.youtube.com/watch?v=FM7MFYoylVs",
+    youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
     img_url="https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB074R2BS.png?v=1.0"
 )
 
