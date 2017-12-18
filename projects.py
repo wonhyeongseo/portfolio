@@ -28,10 +28,33 @@ won_lab = project_model.Project(
     open_datetime="November 23rd 12017",
     genre="Website",
     youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
-    img_url="https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB074R2BS.png?v=1.0"
+    img_url="https://d85wutc1n854v.cloudfront.net/live/\
+    products/600x375/WB074R2BS.png?v=1.0"
+)
+
+logs_analysis = project_model.Project(
+    title="Log Analysis Tool_Udacity",
+    description="Udacity Project for Backend",
+    open_datetime="December 6th 12017",
+    genre="Command Line Tool",
+    youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
+    img_url="https://cdn.makeuseof.com/wp-content/uploads/\
+    2017/09/Master-Command-Prompt-Tips-Featured-670x335.jpg"
+)
+
+item_catalog = project_model.Project(
+    title="Item Catalog App",
+    description="Final Udacity Project for Backend",
+    open_datetime="December 18th 12017",
+    genre="Web app",
+    youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
+    img_url="https://d85wutc1n854v.cloudfront.net/live/products/\
+    600x375/WB074R2BS.png?v=1.0"
 )
 
 portfolio.open_projects_page([
     movie_shelf,
     won_lab,
+    logs_analysis,
+    item_catalog,
 ])
