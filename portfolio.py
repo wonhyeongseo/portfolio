@@ -28,7 +28,7 @@ main_page_head = '''
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css\style.css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" media="screen"/>
         <!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
          <!-- Bootstrap Js CDN -->
@@ -122,7 +122,8 @@ project_content = '''
                          data-trailer-youtube-id="{trailer_youtube_id}"
                          data-toggle="modal"
                          data-target="#trailer">
-                        <img src="{poster_image_url}">
+                        <img src="{poster_image_url}"
+                             alt="Image for {project_title}">
                         <h2>{project_title}</h2>
                         <span>
                             <strong>Title: </strong>{project_title} <br>
