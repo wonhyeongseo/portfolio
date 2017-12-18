@@ -1,5 +1,5 @@
 ##########################################
-# Project 3: Movie Website
+# Project 3: Portfolio Website
 # Date Started: 10/01/2017
 # Date Completed: 10/02/2017
 # Submitted by: Wonhyeong Seo
@@ -28,7 +28,7 @@ main_page_head = '''
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css\style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css\style.css" media="screen"/>
         <!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
          <!-- Bootstrap Js CDN -->
@@ -48,7 +48,8 @@ main_page_content = '''
             <div class="modal-dialog">
                 <div class="modal-content">
                     <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-                        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+                        <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"
+                             alt="Close button"/>
                     </a>
                     <div class="scale-media" id="trailer-video-container">
                     </div>
@@ -106,7 +107,9 @@ main_page_content = '''
                         </div>
                     </div>
                 </nav>
+                <div class="row">
                 {project_tiles}
+                </div>
             </div>
         </div>
     </body>
@@ -115,17 +118,20 @@ main_page_content = '''
 
 # A single movie entry html template
 project_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{project_title}</h2>
-    <span>
-        <strong>Title: </strong>{project_title} <br>
-        <strong>Description: </strong>{project_desc} <br>
-        <strong>Genre: </strong>{project_genre} <br>
-        <strong>Open Datetime: </strong>{project_time} <br>
-        Click to see the intro!
-    </span>
-</div>
+                    <div class="col-md-6 col-lg-4 movie-tile text-center"
+                         data-trailer-youtube-id="{trailer_youtube_id}"
+                         data-toggle="modal"
+                         data-target="#trailer">
+                        <img src="{poster_image_url}">
+                        <h2>{project_title}</h2>
+                        <span>
+                            <strong>Title: </strong>{project_title} <br>
+                            <strong>Description: </strong>{project_desc} <br>
+                            <strong>Genre: </strong>{project_genre} <br>
+                            <strong>Open Datetime: </strong>{project_time} <br>
+                            Click to see the intro!
+                        </span>
+                    </div>
 '''
 
 def create_projects_content(projects):
