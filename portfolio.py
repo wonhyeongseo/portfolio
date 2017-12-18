@@ -29,14 +29,6 @@ main_page_head = '''
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css" media="screen"/>
-        <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-         <!-- jQuery Nicescroll CDN -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
-
-         <script type="text/javascript" src="js/script.js"></script>
     </head>
 '''
 
@@ -112,6 +104,14 @@ main_page_content = '''
                 </div>
             </div>
         </div>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Nicescroll CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
 '''
@@ -126,11 +126,11 @@ project_content = '''
                              alt="Image for {project_title}">
                         <h2>{project_title}</h2>
                         <span>
-                            <strong>Title: </strong>{project_title} <br>
-                            <strong>Description: </strong>{project_desc} <br>
-                            <strong>Genre: </strong>{project_genre} <br>
-                            <strong>Open Datetime: </strong>{project_time} <br>
-                            Click to see the intro!
+                            <p><strong>Title: </strong>{project_title}</p>
+                            <p><strong>Description: </strong>{project_desc}</p>
+                            <p><strong>Genre: </strong>{project_genre}</p>
+                            <p><strong>Open Datetime: </strong>{project_time}</p>
+                            <p>Click to see the intro!</p>
                         </span>
                     </div>
 '''
