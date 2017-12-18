@@ -4,21 +4,24 @@ DEMO STYLE
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	background: #fafafa;
 }
+
 p {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
 	line-height: 1.7em;
 	color: #999;
 }
+
 a, a:hover, a:focus {
 	color: inherit;
 	text-decoration: none;
 	transition: all 0.3s;
 }
+
 .navbar {
 	padding: 15px 10px;
 	background: #fff;
@@ -27,17 +30,20 @@ a, a:hover, a:focus {
 	margin-bottom: 40px;
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-btn {
 	box-shadow: none;
 	outline: none !important;
 	border: none;
 }
+
 .line {
 	width: 100%;
 	height: 1px;
 	border-bottom: 1px dashed #ddd;
 	margin: 40px 0;
 }
+
 /* ---------------------------------------------------
                    SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -53,43 +59,54 @@ a, a:hover, a:focus {
 	color: #fff;
 	transition: all 0.3s;
 }
+
 #sidebar.active {
 	margin-left: -250px;
 }
+
 #sidebar .sidebar-header {
 	padding: 20px;
 	background: #ccae6d;
 }
+
 #sidebar ul.components {
 	padding: 20px 0;
 	border-bottom: 1px solid #8b6247;
 }
+
 #sidebar ul input {
 	padding: 10px;
 }
+
 #add {
 	margin-left: 10px;
 }
+
 #sidebar ul button {
 	margin: auto;
 	width: 30%;
 }
+
 #sidebar ul li a {
 	padding: 10px;
 	font-size: 1.1em;
 	display: block;
 }
+
 #sidebar ul li a:hover {
 	color: #7386D5;
 	background: #fff;
 }
+
 #sidebar ul li.active>a, a[aria-expanded="true"] {
 	color: #fff;
-	background: ##cc9b6d;
+	background: #cc9b6d;
 }
+
 a[data-toggle="collapse"] {
 	position: relative;
 }
+
 a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
 	content: '\e259';
 	display: block;
@@ -98,14 +115,17 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
 	font-family: 'Glyphicons Halflings';
 	font-size: 0.6em;
 }
+
 a[aria-expanded="true"]::before {
 	content: '\e260';
 }
+
 ul ul a {
 	font-size: 0.9em !important;
 	padding-left: 30px !important;
 	background: #ccab6d;
 }
+
 a.article, a.article:hover {
 	background: #6d7fcc !important;
 	color: #fff !important;
@@ -123,37 +143,47 @@ a.article, a.article:hover {
 	top: 0;
 	right: 0;
 }
+
 #content.active {
 	width: 100%;
 }
+
 #trailer .modal-dialog {
 	margin-top: 5%;
 	width: 50%;
 	height: 50%;
 }
+
 .hanging-close {
 	position: absolute;
 	top: -12px;
 	right: -12px;
 	z-index: 9001;
 }
+
 #trailer-video {
 	width: 100%;
 	height: 100%;
 }
-.movie-tile {
+
+.project-tile {
+	width: 220px;
+	height: 324px;
 	margin-bottom: 20px;
 	padding-top: 20px;
 	position: relative;
 }
-.movie-tile:hover {
+
+.project-tile:hover {
 	background-color: #EEE;
 	cursor: pointer;
 }
-.movie-tile span {
+
+.project-tile span {
 	display: none;
 }
-.movie-tile:hover>span {
+
+.project-tile:hover>span {
 	display: block;
 	z-index: 9;
 	background-color: #fff2e6;
@@ -163,10 +193,12 @@ a.article, a.article:hover {
 	position: fixed;
 	overflow: hidden;
 }
+
 .scale-media {
 	padding-bottom: 56.25%;
 	position: relative;
 }
+
 .scale-media iframe {
 	border: none;
 	height: 100%;

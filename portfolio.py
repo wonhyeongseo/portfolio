@@ -100,7 +100,7 @@ main_page_content = '''
                     </div>
                 </nav>
                 <div class="row">
-                {project_tiles}
+                    {project_tiles}
                 </div>
             </div>
         </div>
@@ -118,12 +118,13 @@ main_page_content = '''
 
 # A single movie entry html template
 project_content = '''
-                    <div class="col-md-6 col-lg-4 movie-tile text-center"
+                    <div class="col-md-6 col-lg-4 project-tile text-center"
                          data-trailer-youtube-id="{trailer_youtube_id}"
                          data-toggle="modal"
                          data-target="#trailer">
                         <img src="{poster_image_url}"
-                             alt="Image for {project_title}">
+                             alt="Image for {project_title}"
+                             class="img-responsive">
                         <h2>{project_title}</h2>
                         <span>
                             <p><strong>Title: </strong>{project_title}</p>
