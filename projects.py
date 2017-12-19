@@ -19,7 +19,8 @@ movie_shelf = project_model.Project(
     open_datetime="November 2nd 12017",
     genre="Website",
     youtube_url="https://www.youtube.com/watch?v=FM7MFYoylVs",
-    img_url="http://all-that-is-interesting.com/wordpress/wp-content/uploads/2012/08/great-libraries-bibliotheque2.jpg"
+    img_url="http://all-that-is-interesting.com/wordpress/\
+wp-content/uploads/2012/08/great-libraries-bibliotheque2.jpg"
 )
 
 won_lab = project_model.Project(
@@ -29,7 +30,7 @@ won_lab = project_model.Project(
     genre="Website",
     youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
     img_url="https://d85wutc1n854v.cloudfront.net/live/\
-    products/600x375/WB074R2BS.png?v=1.0"
+products/600x375/WB074R2BS.png?v=1.0"
 )
 
 logs_analysis = project_model.Project(
@@ -39,7 +40,7 @@ logs_analysis = project_model.Project(
     genre="Command Line Tool",
     youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
     img_url="https://cdn.makeuseof.com/wp-content/uploads/\
-    2017/09/Master-Command-Prompt-Tips-Featured-670x335.jpg"
+2017/09/Master-Command-Prompt-Tips-Featured-670x335.jpg"
 )
 
 item_catalog = project_model.Project(
@@ -48,8 +49,8 @@ item_catalog = project_model.Project(
     open_datetime="December 18th 12017",
     genre="Web app",
     youtube_url="https://www.youtube.com/watch?v=bbNqtsN-lV0",
-    img_url="https://d85wutc1n854v.cloudfront.net/live/products/\
-    600x375/WB074R2BS.png?v=1.0"
+    img_url="https://d85wutc1n854v.cloudfront.net/live/\
+products/600x375/WB074R2BS.png?v=1.0"
 )
 
 portfolio.open_projects_page([

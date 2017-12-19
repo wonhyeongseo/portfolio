@@ -99,8 +99,10 @@ main_page_content = '''
                         </div>
                     </div>
                 </nav>
-                <div class="row">
-                    {project_tiles}
+                <div class="container">
+                    <div class="row">
+                        {project_tiles}
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,22 +120,22 @@ main_page_content = '''
 
 # A single movie entry html template
 project_content = '''
-                    <div class="col-md-6 col-lg-4 project-tile text-center"
-                         data-trailer-youtube-id="{trailer_youtube_id}"
-                         data-toggle="modal"
-                         data-target="#trailer">
-                        <img src="{poster_image_url}"
-                             alt="Image for {project_title}"
-                             class="img-responsive">
-                        <h2>{project_title}</h2>
-                        <span>
-                            <p><strong>Title: </strong>{project_title}</p>
-                            <p><strong>Description: </strong>{project_desc}</p>
-                            <p><strong>Genre: </strong>{project_genre}</p>
-                            <p><strong>Open Datetime: </strong>{project_time}</p>
-                            <p>Click to see the intro!</p>
-                        </span>
-                    </div>
+                        <div class="col-xs-12 col-md-6 col-lg-4 project-tile text-center"
+                            data-trailer-youtube-id="{trailer_youtube_id}"
+                            data-toggle="modal"
+                            data-target="#trailer">
+                            <img src="{poster_image_url}"
+                                alt="Image for {project_title}"
+                                class="img-responsive">
+                            <h2>{project_title}</h2>
+                            <span>
+                                <p><strong>Title: </strong>{project_title}</p>
+                                <p><strong>Description: </strong>{project_desc}</p>
+                                <p><strong>Genre: </strong>{project_genre}</p>
+                                <p><strong>Open Datetime: </strong>{project_time}</p>
+                                <p>Click to see the intro!</p>
+                            </span>
+                        </div>
 '''
 
 def create_projects_content(projects):
