@@ -183,7 +183,7 @@ a.article, a.article:hover {
 	display: none;
 }
 
-.project-tile:hover>span {
+.project-tile:hover > span {
 	display: block;
 	z-index: 9;
 	background-color: #fff2e6;
